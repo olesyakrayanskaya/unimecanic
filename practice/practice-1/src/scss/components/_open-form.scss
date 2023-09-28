@@ -1,0 +1,14 @@
+@use '../base/variables';
+
+.open-form {
+  width: 150px;
+  height: 40px;
+  padding: 5px;
+  background-color: variables.$button-color;
+  color: variables.$white;
+  outline: none;
+  outline-offset: none;
+  border: none;
+  margin-top: 40px;
+  margin-left: 80%;
+}
