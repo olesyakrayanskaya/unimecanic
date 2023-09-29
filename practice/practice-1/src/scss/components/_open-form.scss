@@ -7,8 +7,12 @@
   background-color: variables.$button-color;
   color: variables.$white;
   outline: none;
-  outline-offset: none;
   border: none;
   margin-top: 40px;
   margin-left: 80%;
+
+  @media (max-width: 900px) {
+    display: block;
+    margin: 30px auto;    
+  }
 }

@@ -7,6 +7,7 @@
   z-index: 100;
   display: none;
   background-color: rgba(0, 0, 0, 0.42);
+  overflow-y: auto;
 
   &__close {
     display: inline-block;

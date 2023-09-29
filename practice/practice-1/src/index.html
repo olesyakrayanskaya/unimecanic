@@ -13,158 +13,193 @@
           <legend class="form__title">Стать партнёром проекта</legend>
           <div class="form__first-set">
             <div class="form__contacts">
-              <input
-                class="form__input form__input_sm"
-                type="text"
-                name="org"
-                id="org"
-                required
-                placeholder="✱ Название организации"
-              />
-              <label class="form__label form__label_sm" for="org"></label>
-              <input
-                class="form__input form__input_sm"
-                type="tel"
-                name="tel"
-                id="tel"
-                required
-                placeholder="✱ Телефон"
-              />
-              <label class="form__label form__label_sm" for="tel"></label>
-              <input
-                class="form__input form__input_sm"
-                type="email"
-                name="email"
-                id="email"
-                required
-                placeholder="✱ E-mail"
-              />
-              <label class="form__label form__label_sm" for="email"></label>
-            </div>
-            <div class="form__logo">
-              <label class="form__label" for="file">
+              <label class="form__label form__label_sm" for="org">
                 <input
                   class="form__input form__input_sm"
-                  type="file"
-                  name="file"
-                  id="file"
+                  type="text"
+                  name="org"
+                  id="org"
                   required
-                  placeholder="✱ Логотип (jpeg, png)"
                 />
+                <span class="form__placeholder form__placeholder_sm"
+                  >✱ Название организации</span
+                >
               </label>
+              <label class="form__label form__label_sm" for="tel">
+                <input
+                  class="form__input form__input_sm"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  required
+                />
+                <span class="form__placeholder form__placeholder_sm"
+                  >✱ Телефон</span
+                >
+              </label>
+              <label class="form__label form__label_sm" for="email">
+                <input
+                  class="form__input form__input_sm"
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                />
+                <span class="form__placeholder form__placeholder_sm"
+                  >✱ E-mail</span
+                >
+              </label>
+            </div>
+            <div class="form__logo logo">
+              <label class="form__label logo__label" for="file"> </label>
+              <span class="logo__placeholder">✱ Логотип (jpeg, png)</span>
+              <img
+                class="form__icon"
+                src="./assets/images/logo.svg"
+                alt="logo"
+                id="logo"
+              />
+              <img
+                class="form__icon"
+                src="./assets/images/close.svg"
+                alt="icon"
+                id="logo-close"
+              />
+              <span class="logo__text"
+                >Выберите <br />
+                файл</span
+              >
+              <img
+                class="form__icon"
+                src="./assets/images/file.svg"
+                alt="icon"
+                id="icon-file"
+              />
+              <input
+                class="form__input form__input_sm"
+                type="file"
+                name="file"
+                id="file"
+                required
+              />
             </div>
           </div>
           <div class="form__second-set">
-            <select
-              class="form__input form__input_lg"
-              type="select"
-              name="direct"
-              id="direct"
-              required
-              placeholder="✱ Направление"
-            >
-              <option class="form__option" value="Экология" selected>
-                Экология
-              </option>
-              <option class="form__option" value="Направление 2">
-                Направление 2
-              </option>
-              <option class="form__option" value="Направление 3">
-                Направление 3
-              </option>
-              <option class="form__option" value="Направление 4">
-                Направление 4
-              </option>
-            </select>
             <label class="form__label form__label_lg" for="direct">
+              <select
+                class="form__input form__input_lg"
+                type="select"
+                name="direct"
+                id="direct"
+                required
+              >
+                <option class="form__option" value="Экология" selected>
+                  Экология
+                </option>
+                <option class="form__option" value="Направление 2">
+                  Направление 2
+                </option>
+                <option class="form__option" value="Направление 3">
+                  Направление 3
+                </option>
+                <option class="form__option" value="Направление 4">
+                  Направление 4
+                </option>
+              </select>
+              <span class="form__placeholder">✱ Направление</span>
               <img
-                class="form__icon"
+                class="form__icon form__icon_in"
                 src="./assets/images/arrow-down.svg"
                 alt="select"
               />
             </label>
-            <input
-              class="form__input form__input_lg"
-              type="text"
-              name="www"
-              id="www"
-            />
             <label class="form__label form__label_lg" for="www">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="www"
+                id="www"
+              />
               <img
-                class="form__icon"
+                class="form__icon form__icon_in"
                 src="./assets/images/www.svg"
                 alt="icon"
               />
             </label>
-            <input
-              class="form__input form__input_lg"
-              type="text"
-              name="vk"
-              id="vk"
-            />
             <label class="form__label form__label_lg" for="vk">
-              <img class="form__icon" src="./assets/images/vk.svg" alt="icon" />
-            </label>
-            <input
-              class="form__input form__input_lg"
-              type="text"
-              name="ok"
-              id="ok"
-            />
-            <label class="form__label form__label_lg" for="ok">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="vk"
+                id="vk"
+              />
               <img
-                class="form__icon"
+                class="form__icon form__icon_in"
+                src="./assets/images/vk.svg"
+                alt="vk"
+              />
+            </label>
+            <label class="form__label form__label_lg" for="ok">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="ok"
+                id="ok"
+              />
+              <img
+                class="form__icon form__icon_in"
                 src="./assets/images/odnoklassniki.svg"
                 alt="icon"
               />
             </label>
-            <input
-              class="form__input form__input_lg"
-              type="text"
-              name="facebook"
-              id="facebook"
-            />
             <label class="form__label form__label_lg" for="facebook">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="facebook"
+                id="facebook"
+              />
               <img
-                class="form__icon"
+                class="form__icon form__icon_in"
                 src="./assets/images/facebook.svg"
                 alt="icon"
               />
             </label>
-            <input
-              class="form__input form__input_lg"
-              type="text"
-              name="instagram"
-              id="instagram"
-            />
             <label class="form__label form__label_lg" for="instagram">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="instagram"
+                id="instagram"
+              />
               <img
-                class="form__icon"
+                class="form__icon form__icon_in"
                 src="./assets/images/instagram.svg"
                 alt="icon"
               />
             </label>
-            <input
-              class="form__input form__input_lg"
-              type="text"
-              name="youtube"
-              id="youtube"
-            />
             <label class="form__label form__label_lg" for="youtube">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="youtube"
+                id="youtube"
+              />
               <img
-                class="form__icon"
+                class="form__icon form__icon_in"
                 src="./assets/images/youtube.svg"
                 alt="icon"
               />
             </label>
-            <input
-              class="form__input form__input_lg"
-              type="text"
-              name="manager"
-              id="manager"
-              placeholder="Руководитель"
-            />
-            <label class="form__label form__label_lg" for="manager"></label>
+            <label class="form__label form__label_lg" for="manager">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="manager"
+                id="manager"
+                placeholder="Руководитель"
+              />
+            </label>
           </div>
         </fieldset>
         <footer class="form__footer">
@@ -181,6 +216,7 @@
             type="reset"
             name="reset"
             id="reset"
+            value="Отменить"
           />
           <label class="form__label" for="reset"></label>
         </footer>
