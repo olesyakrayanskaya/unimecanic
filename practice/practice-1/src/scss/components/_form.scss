@@ -168,6 +168,38 @@
     right: 0;
   }
 
+  &__input::-webkit-input-placeholder {
+    color: variables.$placeholder-color;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  &__input::-moz-placeholder {
+    color: variables.$placeholder-color;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  &__input:-ms-input-placeholder {
+    color: variables.$placeholder-color;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  &__input::-ms-input-placeholder {
+    color: variables.$placeholder-color;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
   &__input::placeholder,
   .logo__placeholder,
   &__placeholder {
@@ -183,7 +215,9 @@
   }
 
   #direct {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     background-color: transparent;
   }
 
