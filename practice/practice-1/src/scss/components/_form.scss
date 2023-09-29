@@ -102,6 +102,10 @@
     }
   }
 
+  &__input:invalid {
+    border: 1px solid #a11414;
+  }
+
   .logo,
   .logo__label {
     display: flex;
@@ -166,11 +170,12 @@
     position: absolute;
     top: 37px;
     right: 0;
+    cursor: pointer;
   }
 
   &__input::-webkit-input-placeholder {
     color: variables.$placeholder-color;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
@@ -178,7 +183,7 @@
 
   &__input::-moz-placeholder {
     color: variables.$placeholder-color;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
@@ -186,7 +191,7 @@
 
   &__input:-ms-input-placeholder {
     color: variables.$placeholder-color;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
@@ -194,7 +199,7 @@
 
   &__input::-ms-input-placeholder {
     color: variables.$placeholder-color;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
@@ -204,7 +209,7 @@
   .logo__placeholder,
   &__placeholder {
     color: variables.$placeholder-color;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
@@ -237,13 +242,13 @@
     position: absolute;
     top: 8px;
     left: 16px;
-    margin-bottom: 7px;
     display: block;
     width: 300px;
+    font-size: 12px;
   }
 
   &__placeholder_sm {
-    top: -8px;
+    top: -10px;
   }
 
   &__placeholder::first-letter {
