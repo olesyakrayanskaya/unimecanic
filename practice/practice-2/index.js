@@ -1,6 +1,6 @@
 'use  strict';
 
-function getPosts() {
+function getPostsDisplayTable() {
   const table = document.createElement('table');
   table.className = 'table';
   const tableTitle = document.createElement('caption');
@@ -47,4 +47,4 @@ function getPosts() {
     );
 }
 
-getPosts();
+getPostsDisplayTable();
