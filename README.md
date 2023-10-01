@@ -1,1 +1,19 @@
-# unimecanic
+#### Тестовое задание на позицию Junior Frontend Developer
+
+[Первое задание (теория)](https://github.com/olesyakrayanskaya/unimecanic/blob/master/theory/theory-1.txt)
+
+[Первое задание (практика)](https://github.com/olesyakrayanskaya/unimecanic/tree/master/practice/practice-1)
+
+Запустить проект:
+
+npm install
+
+npm run serve
+
+[Второе задание (практика)](https://github.com/olesyakrayanskaya/unimecanic/tree/master/practice/practice-2)
+
+[Третье задание (практика)](https://github.com/olesyakrayanskaya/unimecanic/tree/master/practice/practice-3)
+
+
+
+
