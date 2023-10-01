@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  <script defer src="index.c211f5e282cbc551193c.js"></script><link href="index.1e39fec97c2339fcd581.css" rel="stylesheet"></head>
+  <body>
+    <div class="modal" id="mod">
+      <span class="modal__close">&times;</span>
+      <form class="modal__form form" action="#" method="post" autocomplete="on">
+        <fieldset class="form__set">
+          <legend class="form__title">Стать партнёром проекта</legend>
+          <div class="form__first-set">
+            <div class="form__contacts">
+              <label class="form__label form__label_sm" for="org">
+                <input
+                  class="form__input form__input_sm"
+                  type="text"
+                  name="org"
+                  id="org"
+                  required
+                />
+                <span class="form__placeholder form__placeholder_sm"
+                  >✱ Название организации</span
+                >
+              </label>
+              <label class="form__label form__label_sm" for="tel">
+                <input
+                  class="form__input form__input_sm"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  required
+                  placeholder="123-45-678"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                />
+                <span class="form__placeholder form__placeholder_sm"
+                  >✱ Телефон</span
+                >
+              </label>
+              <label class="form__label form__label_sm" for="email">
+                <input
+                  class="form__input form__input_sm"
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                />
+                <span class="form__placeholder form__placeholder_sm"
+                  >✱ E-mail</span
+                >
+              </label>
+            </div>
+            <div class="form__logo logo">
+              <label class="form__label logo__label" for="file"> </label>
+              <span class="logo__placeholder" id="file-placeholder">✱ Логотип (jpeg, png)</span>
+              <img
+                class="form__icon"
+                src="logo.20871447fca62e546628.svg"
+                alt="logo"
+                id="logo"
+              />
+              <img
+                class="form__icon"
+                src="close.c57f680f7eb6a33f4b42.svg"
+                alt="icon"
+                id="logo-close"
+              />
+              <span class="logo__text"
+                >Выберите <br />
+                файл</span
+              >
+              <img
+                class="form__icon"
+                src="file.a5e17f1fcff9693d205c.svg"
+                alt="icon"
+                id="icon-file"
+              />
+              <input
+                class="form__input"
+                type="file"
+                name="file"
+                id="file"
+                required
+              />
+            </div>
+          </div>
+          <div class="form__second-set">
+            <label class="form__label form__label_lg" for="direct">
+              <select
+                class="form__input form__input_lg"
+                name="direct"
+                id="direct"
+                required
+              >
+                <option class="form__option" value=""></option>
+                <option class="form__option" value="Направление 2">
+                  Направление 2
+                </option>
+                <option class="form__option" value="Направление 3">
+                  Направление 3
+                </option>
+                <option class="form__option" value="Направление 4">
+                  Направление 4
+                </option>
+              </select>
+              <span class="form__placeholder">✱ Направление</span>
+              <img
+                class="form__icon form__icon_in"
+                src="arrow-down.320b441dcdaac016960d.svg"
+                alt="select"
+              />
+            </label>
+            <label class="form__label form__label_lg" for="www">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="www"
+                id="www"
+                minlength="2"
+              />
+              <img
+                class="form__icon form__icon_in"
+                src="www.10aba242da17115e4a7d.svg"
+                alt="icon"
+              />
+            </label>
+            <label class="form__label form__label_lg" for="vk">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="vk"
+                id="vk"
+                pattern="^(http://|https://)?vk\.com(/.*)?"
+                placeholder="vk.com/shans"
+              />
+              <img
+                class="form__icon form__icon_in"
+                src="vk.ce2834f03c5caedf5fbb.svg"
+                alt="vk"
+              />
+            </label>
+            <label class="form__label form__label_lg" for="ok">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="ok"
+                id="ok"
+                pattern="^(http://|https://)?ok\.com(/.*)?"
+                placeholder="ok.com/shans"
+              />
+              <img
+                class="form__icon form__icon_in"
+                src="odnoklassniki.4230563b8611ee6272f9.svg"
+                alt="icon"
+              />
+            </label>
+            <label class="form__label form__label_lg" for="facebook">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="facebook"
+                id="facebook"
+                pattern="^(http://|https://)?facebook\.com(/.*)?"
+                placeholder="facebook.com/shans"
+              />
+              <img
+                class="form__icon form__icon_in"
+                src="facebook.e7408dfdd1d7bae3995d.svg"
+                alt="icon"
+              />
+            </label>
+            <label class="form__label form__label_lg" for="instagram">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="instagram"
+                id="instagram"
+                pattern="^(http://|https://)?instagram\.com(/.*)?"
+                placeholder="instagram.com/shans"
+              />
+              <img
+                class="form__icon form__icon_in"
+                src="instagram.0e246b3f887cf9adf8c9.svg"
+                alt="icon"
+              />
+            </label>
+            <label class="form__label form__label_lg" for="youtube">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="youtube"
+                id="youtube"
+                pattern="^(http://|https://)?youtube\.com(/.*)?"
+                placeholder="youtube.com/shans"
+              />
+              <img
+                class="form__icon form__icon_in"
+                src="youtube.5f799afaadd20f9ad67f.svg"
+                alt="icon"
+              />
+            </label>
+            <label class="form__label form__label_lg" for="manager">
+              <input
+                class="form__input form__input_lg"
+                type="text"
+                name="manager"
+                id="manager"
+                pattern="^[a-zA-Zа-яА-ЯёЁ\s]+$"
+                placeholder="Руководитель"
+              />
+            </label>
+          </div>
+        </fieldset>
+        <footer class="form__footer">
+          <input
+            class="form__input form__input_lg form__input_fill"
+            type="submit"
+            name="submit"
+            id="submit"
+            value="Стать партнёром проекта"
+          />
+          <label class="form__label form__label_lg" for="submit"></label>
+          <input
+            class="form__input form__input_transparent"
+            type="reset"
+            name="reset"
+            id="reset"
+            value="Отменить"
+          />
+          <label class="form__label" for="reset"></label>
+        </footer>
+      </form>
+    </div>
+    <button class="open-form" type="button">Стать партнером</button>
+  </body>
+</html>
