@@ -94,3 +94,31 @@ function getPostsDisplayTable() {
 }
 
 getPostsDisplayTable();
+
+const tab = document.querySelector('.table');
+const search = document.getElementById('search');
+const select = document.getElementById('select');
+const rowArr = tab.getElementsByTagName('tr');
+
+search.addEventListener('input', () => {
+  filterStr = search.value.toUpperCase();
+  if (filterStr.length >= 3) {
+    let searchColIndex = select.value === 'in title' ? 2 : 3;
+    for (let i = 0; i < rowArr.length; i++) {
+      let searchCell;
+      searchCell = rowArr[i].getElementsByTagName('td')[searchColIndex];
+      if (searchCell) {
+        let textValue = searchCell.textContent || searchCell.innerText;
+        if (textValue.toUpperCase().indexOf(filterStr) > -1) {
+          rowArr[i].style.display = '';
+        } else {
+          rowArr[i].style.display = 'none';
+        }
+      }
+    }
+  } else {
+    for (let i = 0; i < rowArr.length; i++) {
+      rowArr[i].style.display = '';
+    }
+  }
+});
