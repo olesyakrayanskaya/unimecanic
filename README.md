@@ -4,6 +4,10 @@
 
 [Первое задание (практика)](https://github.com/olesyakrayanskaya/unimecanic/tree/master/practice/practice-1)
 
+Опубликован на: [https://olesyakrayanskaya.github.io/unimecanic/](https://olesyakrayanskaya.github.io/unimecanic/)
+
+Открыть форму: клик на кнопку Стать партнером
+
 Запустить проект:
 
 npm install
