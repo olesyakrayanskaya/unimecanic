@@ -4,7 +4,7 @@
 
 [Первое задание (практика)](https://github.com/olesyakrayanskaya/unimecanic/tree/master/practice/practice-1)
 
-Опубликован на: [https://olesyakrayanskaya.github.io/unimecanic/](https://olesyakrayanskaya.github.io/unimecanic/)
+Опубликованo на: [https://olesyakrayanskaya.github.io/unimecanic/](https://olesyakrayanskaya.github.io/unimecanic/)
 
 Открыть форму: клик на кнопку Стать партнером
 
@@ -17,7 +17,3 @@ npm run serve
 [Второе задание (практика)](https://github.com/olesyakrayanskaya/unimecanic/tree/master/practice/practice-2)
 
 [Третье задание (практика)](https://github.com/olesyakrayanskaya/unimecanic/tree/master/practice/practice-3)
-
-
-
-
