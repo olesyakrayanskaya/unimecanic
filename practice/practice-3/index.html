@@ -7,12 +7,17 @@
     <title>Posts</title>
   </head>
   <body>
-    <label for="select">search in</label>
-    <select name="select" id="select">
-      <option value="in title">in title</option>
-      <option value="in body">in body</option>
-    </select>
-    <input type="search" name="search" id="search">
+    <div class="select">
+      <label for="select">search in:</label>
+      <select name="select" id="select">
+        <option value="in title">in title</option>
+        <option value="in body">in body</option>
+      </select>
+    </div>
+    <div class="search">
+      <label for="search">search post:</label>
+      <input type="search" name="search" id="search" />
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

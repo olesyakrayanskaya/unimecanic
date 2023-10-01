@@ -45,21 +45,38 @@ td:nth-child(4) {
     text-align: left;
 }
 
-.message {
-  width: 70vw;
-  height: 200px;
-  position: absolute;
-  top: 200px;
-  left: 15vw;
-  border: 1px solid #817d7d; 
-  background-color: beige;
-  display: none;
-}
-
 #search {
-  width: 80vw;
+  width: 80%;
   margin: 0 auto 30px;
   padding: 5px 15px; 
   display: block; 
   cursor: pointer;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+select {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.select label {
+  margin-right: 20px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.search label {
+  margin-bottom: 15px;
 }
