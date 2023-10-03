@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\n/* harmony import */ var _js_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/modal */ \"./src/js/modal.js\");\n/* harmony import */ var _js_modal__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_modal__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_placeholders__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/placeholders */ \"./src/js/placeholders.js\");\n/* harmony import */ var _js_placeholders__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_placeholders__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_inputs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/inputs */ \"./src/js/inputs.js\");\n/* harmony import */ var _js_inputs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_inputs__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n//# sourceURL=webpack://webpackbaseconfig/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\n/* harmony import */ var _js_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/modal */ \"./src/js/modal.js\");\n/* harmony import */ var _js_modal__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_modal__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_placeholders__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/placeholders */ \"./src/js/placeholders.js\");\n/* harmony import */ var _js_placeholders__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_placeholders__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_inputs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/inputs */ \"./src/js/inputs.js\");\n\n\n\n\n\n//# sourceURL=webpack://webpackbaseconfig/./src/index.js?");
 
 /***/ }),
 
@@ -24,9 +24,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mai
 /*!**************************!*\
   !*** ./src/js/inputs.js ***!
   \**************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("const logoClose = document.getElementById('logo-close');\nconst inputLogo = document.getElementById('file');\nconst filePlaceholder = document.getElementById('file-placeholder');\nlogoClose.addEventListener('click', () => {\n  inputLogo.value = '';\n  filePlaceholder.style.opacity = 1;\n});\n\n//# sourceURL=webpack://webpackbaseconfig/./src/js/inputs.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_images_logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/images/logo.svg */ \"./src/assets/images/logo.svg\");\nconst logoClose = document.getElementById('logo-close');\nconst logoFileIcon = document.getElementById('icon-file');\nconst inputLogo = document.getElementById('file');\nconst filePlaceholder = document.getElementById('file-placeholder');\nconst logo = document.getElementById('logo');\nconst logoText = document.querySelector('.logo__text');\n\nlogoClose.addEventListener('click', () => {\n  inputLogo.value = '';\n  filePlaceholder.style.opacity = 1;\n  logo.src = _assets_images_logo_svg__WEBPACK_IMPORTED_MODULE_0__;\n  logoText.style.display = 'inline-block';\n  logoFileIcon.style.display = 'block';\n});\ninputLogo.addEventListener('change', event => {\n  const files = event.target.files;\n  const countFiles = files.length;\n  if (!countFiles) {\n    alert('Не выбран файл!');\n    return;\n  }\n  const selectedFile = files[0];\n  if (!/^image/.test(selectedFile.type)) {\n    alert('Выбранный файл не является изображением!');\n    return;\n  }\n  const reader = new FileReader();\n  reader.readAsDataURL(selectedFile);\n  reader.addEventListener('load', event => {\n    logo.src = event.target.result;\n    logo.alt = selectedFile.name;\n    logo.textContent = selectedFile.name;\n    logo.style.width = '164px';\n    logo.style.height = '164px';\n    logo.style.borderRadius = '50%';\n    logo.style.objectFit = 'cover';\n    logo.style.objectPosition = 'center';\n  });\n  logoText.style.display = 'none';\n  logoFileIcon.style.display = 'none';\n});\n\n//# sourceURL=webpack://webpackbaseconfig/./src/js/inputs.js?");
 
 /***/ }),
 
@@ -58,6 +59,17 @@ eval("const inputs = document.querySelectorAll('.form__input_sm');\nconst inputL
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpackbaseconfig/./src/main.scss?");
+
+/***/ }),
+
+/***/ "./src/assets/images/logo.svg":
+/*!************************************!*\
+  !*** ./src/assets/images/logo.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"logo.20871447fca62e546628.svg\";\n\n//# sourceURL=webpack://webpackbaseconfig/./src/assets/images/logo.svg?");
 
 /***/ })
 
@@ -112,6 +124,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -126,6 +150,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
